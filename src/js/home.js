@@ -23,8 +23,18 @@ $(document).on('ready', function() {
       }
 
     });
+// Remove newsletter signup successful successful submit
+
+$(".newsSubmit").on('click', function(event) {
+   event.preventDefault();
+   if ($('#NewsletterSignup').hasClass('success')) {
+       $('#newsletterBar').hide();
+   }
+})
 
 
+
+// Change Glyphicon glyphicon-heart
 
 
     // Slider
